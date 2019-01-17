@@ -68,7 +68,7 @@ Currently you can customize all visible texts and the main widget color by setti
 
 3. Point the bot webhook to your bot server by making a `GET` request to the following url
   `https://api.telegram.org/bot<TOKEN>/setWebhook?url=<Server url>/hook`
-  (Don't forget to replace with your token and server url)
+  (Don't forget to replace with your token and server url. It must support `https://`)
 
 4. Open a chat with your bot and hit `/start` to get your unique chat ID
 
@@ -81,3 +81,6 @@ Currently you can customize all visible texts and the main widget color by setti
   <script id="intergram" type="text/javascript" src="<Server url>/js/widget.js"></script>
   ```
 6. :tada:
+
+### Tips
+  - By replying to a specific user on Telegram the message is only sent to this chat (otherwise all open chats receive the message).
